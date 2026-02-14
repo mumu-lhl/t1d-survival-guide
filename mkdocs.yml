@@ -1,1 +1,27 @@
-site_name: My Docs
+site_name: 1 型糖尿病生存指南
+
+repo_url: https://github.com/mumu-lhl/t1d-survival-guide
+repo_name: mumu-lhl/t1d-survival-guide
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - content.action.edit
+    - content.action.view
+
+    - search.suggest
+    - search.share
+
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+  - git-committers:
+      repository: mumu-lhl/t1d-survival-guide
+      branch: main
+
+  - search:
+      lang: zh
+
+  - optimize
